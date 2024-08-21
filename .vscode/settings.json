@@ -1,0 +1,18 @@
+{
+	"files.associations": {
+		"*.c": "c",
+		"*.h": "c",
+		"*.make": "makefile",
+		"Makefile": "makefile"
+	},
+	"editor.detectIndentation": false, // Disable automatic detection of indentation
+	"editor.tabSize": 4, // Set the tab size to your preference, e.g., 4 spaces per tab
+	"editor.insertSpaces": false, // Use tab characters instead of spaces
+	"editor.formatOnSave": true, // Formats the document on save
+	"editor.formatOnType": false, // Formats line on type
+	"editor.formatOnPaste": true,
+	"editor.renderWhitespace": "all",
+	"editor.rulers": [
+		80,
+	],
+}

@@ -1,0 +1,29 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run wyk",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/wykd",
+			"args": [], // Optional: Add any command-line arguments here
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}", // The working directory of the program
+			"environment": [],
+			"externalConsole": false, // Set to true to use an external console for I/O
+			"MIMode": "gdb", // or "lldb" depending on your debugger
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "build wyk", // Optional: Name of the task to build your program
+			"miDebuggerPath": "/usr/bin/gdb", // Path to gdb, adjust if necessary
+			"logging": {
+				"engineLogging": false
+			}
+		}
+	]
+}
